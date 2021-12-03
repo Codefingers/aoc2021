@@ -17,11 +17,10 @@ const applyOperation = (operator, currentValue) => {
     }
 }
 
-const lines = fs.readFileSync('input.txt').toString().split('\n')
+const lines = fs.readFileSync(__dirname + '/input.txt').toString().split('\n')
 for (let i = 0; i < lines.length; i++) {
     const values = lines[i].split(' ')
     applyOperation(values[0], Number(values[1]))
-    console.log(depth, horizontal, aim)
 }
 
 console.log(depth*horizontal)

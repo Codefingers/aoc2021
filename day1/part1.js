@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const input = fs.readFileSync('input.txt').toString().split('\n').map((value) => Number(value))
+const input = fs.readFileSync(__dirname + '/input.txt').toString().split('\n').map((value) => Number(value))
 
 let lastCount = input[0]
 let increaseCount = 0

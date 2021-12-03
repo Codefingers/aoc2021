@@ -40,7 +40,7 @@ const getScrubberRating = (position, numbers) => {
 }
 
 
-const lines = fs.readFileSync('input.txt').toString().split('\n')
+const lines = fs.readFileSync(__dirname + '/input.txt').toString().split('\n')
 
 const oxyGenRating = getOxygenGeneratorRating(0, [...lines])
 const scrubberRating = getScrubberRating(0, [...lines])

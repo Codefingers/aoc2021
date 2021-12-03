@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 let columns = []
-const lines = fs.readFileSync('input.txt').toString().split('\n')
+const lines = fs.readFileSync(__dirname + '/input.txt').toString().split('\n')
 for (let z = 0; z < lines[0].length; z++) {
     columns.push(lines.map(function(value) { return value[z]; }))
 }

@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const input = fs.readFileSync('input.txt').toString().split('\n').map((value) => Number(value))
+const input = fs.readFileSync(__dirname + '/input.txt').toString().split('\n').map((value) => Number(value))
 
 let increaseCount = 0
 for (let i = 0; i < input.length; i++) {
